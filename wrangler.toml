@@ -1,3 +1,13 @@
 name = "unifi-cloudflare-ddns"
 main = "src/index.js"
 compatibility_date = "2023-04-23"
+
+routes = [
+  { pattern = "dynamic.globalbuckley.co.uk", custom_domain = true }
+]
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
